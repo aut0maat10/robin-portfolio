@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
       {backgroundImg}
     </div>  */}
       <div className="headline">
-        <h1>{siteTitle}</h1>
+        <h1 className="title-main">{siteTitle}</h1>
       </div>
     
   </div>

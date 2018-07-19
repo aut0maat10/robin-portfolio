@@ -11,12 +11,15 @@
 }
 
 .headline h1 {
-  color: lightcoral;
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+}
+
+.title-main {
+  color: lightslategray;
 }
 
 /* .backgroundImg {

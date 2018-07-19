@@ -20,5 +20,6 @@ body {
   display: grid;
   justify-items: center; 
   grid-column: 2 / 3;
+  border: 1px solid green;
 }
 
