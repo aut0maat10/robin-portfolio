@@ -10,8 +10,8 @@
   grid-column: 1 / -1;
 }
 
-.headline h1 {
-  width: 400px;
+.headline {
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,9 @@
 }
 
 .title-main {
-  color: lightslategray;
+  color: darkslategray;
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* .backgroundImg {
