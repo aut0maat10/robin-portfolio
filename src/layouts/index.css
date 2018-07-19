@@ -13,13 +13,11 @@ body {
   grid-gap: 20px;
   /* justify-content: center; */
   align-items: center; 
-  border: 1px solid red;
 }
 
 .infotext {
   display: grid;
   justify-items: center; 
   grid-column: 2 / 3;
-  border: 1px solid green;
 }
 
