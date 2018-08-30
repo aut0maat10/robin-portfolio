@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru|Mukta:800|Roboto+Mono');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -20,4 +22,10 @@ body {
   justify-items: center; 
   grid-column: 2 / 3;
 }
+
+.typed-cursor{
+  font-size: 1.4em;
+  color: darkslategray;
+}
+
 

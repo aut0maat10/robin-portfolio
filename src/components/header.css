@@ -1,3 +1,4 @@
+
 .hero {
   background-image: url('../Assets/background.jpg');
   background-size: cover;
@@ -11,20 +12,115 @@
 }
 
 .headline {
-  width: 600px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 30px;
 }
 
 .title-main {
   color: darkslategray;
-  font-size: 3em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
-/* .backgroundImg {
-  width: 100%;
-  max-height: 100%;
-} */
+.headline p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+}
+
+.callToAction {
+  margin: 50px;
+  padding: 12px;
+  background-color: #FA7364;
+  border: 1px solid white; 
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+
+  /* animation: grow .9s;
+  animation-iteration-count: 5; */
+
+  -webkit-animation: 18s ease 0s normal forwards 1 fadeinb;
+  animation: 18s ease 0s normal forwards 1 fadeinb;
+ 
+
+  /* transform: scale(1.3); */
+  
+  
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+
+  -webkit-animation: 20s ease 0s normal forwards 1 fadeinb;
+  animation: 20s ease 0s normal forwards 1 fadeinb;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .title-main {
+    font-size: 3em;
+  }
+  .headline p {
+    font-size: .9em;
+    flex-direction: row;
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes grow {
+    from { transform:scale(1)}
+    to { transform:scale(1.1)}
+}
+
+@keyframes fadeinb {
+    0% { opacity:0; }
+    88% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadeinb {
+    0% { opacity:0; }
+    88% { opacity:0; }
+    100% { opacity:1; }
+}

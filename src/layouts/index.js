@@ -14,15 +14,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div className="infotext"
-      /* style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }} */
-    >
+    <Header 
+      siteTitle={data.site.siteMetadata.title} 
+      subHeader={data.site.siteMetadata.subHeader}
+    />
+    <div className="infotext">
       {children()}
     </div>
   </div>
@@ -38,7 +34,8 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
-        title
+        title,
+        subHeader
       }
     }
   }

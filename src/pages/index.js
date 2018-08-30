@@ -4,8 +4,7 @@ import '../layouts/index.css';
 
 const IndexPage = () => (
   <div>
-    <p>I'm a full stack developer and a musician.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/page-2/">About</Link>
   </div>
 )
 
